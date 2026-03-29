@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bread Controversy — The Bread Collective</title>
+  <meta name="description"
+    content="The heated debates of the bread world — gluten-free vs. gluten, white vs. whole grain, sliced bread's legacy, and more divisive bread topics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ======= NAVIGATION ======= -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="wheat-icon">🌾</span>
+      The Bread Collective
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Featured</a></li>
+      <li><a href="how-to-make.html">How to Make</a></li>
+      <li><a href="toppings.html">Toppings</a></li>
+      <li><a href="controversy.html" class="active">Controversy</a></li>
+    </ul>
+  </nav>
+
+  <!-- ======= PAGE HERO ======= -->
+  <section class="page-hero">
+    <div class="hero-bg">
+      <img src="images/controversy.png" alt="Whole grain bread vs commercial white bread" loading="eager">
+    </div>
+    <div class="hero-content">
+      <span class="hero-badge">The great debates</span>
+      <h1>Bread Controversy</h1>
+      <p>Bread — humanity's oldest food — is also one of its most argued about. From health scares to cultural wars,
+        these are the hot takes dividing bread lovers everywhere.</p>
+    </div>
+  </section>
+
+  <!-- ======= CONTROVERSIES ======= -->
+  <section class="content-section">
+
+    <!-- Controversy 1: Gluten -->
+    <div class="controversy-topic animate-in">
+      <h3><span class="topic-icon">🌾</span> The Gluten Debate</h3>
+      <p style="color: var(--text-secondary); margin-bottom: var(--space-xl); line-height: 1.8;">
+        Perhaps no food topic has sparked more debate in the last two decades than gluten. Celiac disease affects about
+        1% of the population, but gluten-free diets have exploded far beyond that — an estimated 30% of Americans have
+        tried to reduce or eliminate gluten. Is gluten genuinely harmful for most people, or has fear outpaced the
+        science?
+      </p>
+      <div class="debate-sides">
+        <div class="side-card pro">
+          <div class="side-label">🟢 Pro-Gluten Argument</div>
+          <p>For the ~93% of people without celiac disease or diagnosed sensitivity, gluten is a perfectly healthy
+            protein found in wheat, barley, and rye. Whole grain breads provide essential fiber, B vitamins, and
+            minerals. Removing gluten unnecessarily can lead to nutritional gaps, since many GF products are lower in
+            fiber and higher in sugar. The gut discomfort some people attribute to gluten may actually be caused by
+            FODMAPs (fermentable carbs) or simply eating too fast.</p>
+        </div>
+        <div class="side-card con">
+          <div class="side-label">🔴 Anti-Gluten Argument</div>
+          <p>Non-celiac gluten sensitivity (NCGS) is real and may affect up to 6% of the population — causing bloating,
+            fatigue, brain fog, and joint pain. Modern wheat has been hybridized for higher gluten content, making it
+            harder to digest than ancient grains like einkorn or emmer. Industrial processing strips the bran and germ,
+            removing the enzymes that help digestion. Many people feel genuinely better after removing gluten, and that
+            lived experience matters.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Controversy 2: White vs Whole Grain -->
+    <div class="controversy-topic animate-in">
+      <h3><span class="topic-icon">⚔️</span> White Bread vs. Whole Grain</h3>
+      <p style="color: var(--text-secondary); margin-bottom: var(--space-xl); line-height: 1.8;">
+        In many Western countries, white bread has gone from being a symbol of luxury (in medieval times, only the
+        wealthy could afford refined flour) to being demonized as nutritionally empty "junk food." Meanwhile, whole
+        grain bread has been elevated to health-food sainthood. But is the divide really that simple?
+      </p>
+      <div class="debate-sides">
+        <div class="side-card pro">
+          <div class="side-label">🟢 Team Whole Grain</div>
+          <p>Whole grain bread retains the bran, germ, and endosperm — meaning more fiber, more vitamins (B1, B3, B6,
+            folate), more minerals (iron, magnesium, zinc), and more antioxidants. Studies consistently link whole grain
+            consumption to lower risks of heart disease, type 2 diabetes, and colorectal cancer. The fiber feeds
+            beneficial gut bacteria and slows blood sugar spikes. White flour has had 25+ nutrients stripped away and
+            only 5 added back via "enrichment."</p>
+        </div>
+        <div class="side-card con">
+          <div class="side-label">🔴 Team White Bread</div>
+          <p>Not all white bread is created equal. Artisan white bread made from quality flour with long fermentation
+            (like a proper baguette or sourdough) is nutritionally different from sliced sandwich bread. Sourdough
+            fermentation breaks down phytic acid, making minerals more bioavailable — sometimes MORE so than whole
+            wheat. Cultural traditions matter too — telling a French person baguettes are unhealthy is a good way to
+            start a diplomatic incident. Context and quality matter more than color.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Controversy 3: Sliced bread -->
+    <div class="controversy-topic animate-in">
+      <h3><span class="topic-icon">🍞</span> Is Sliced Bread Actually Great?</h3>
+      <p style="color: var(--text-secondary); margin-bottom: var(--space-xl); line-height: 1.8;">
+        "The best thing since sliced bread" — it's the ultimate compliment. Otto Rohwedder invented the commercial bread
+        slicer in 1928, and pre-sliced bread quickly became an American staple. But artisan bakers have a bone to pick
+        with this innovation, arguing it ruined bread culture in America for generations.
+      </p>
+      <div class="debate-sides">
+        <div class="side-card pro">
+          <div class="side-label">🟢 Pro Sliced Bread</div>
+          <p>Sliced bread democratized convenience and made sandwiches accessible to every household. It was a genuine
+            innovation in food packaging and distribution. Uniform slices made portion control easier and toast more
+            consistent. It enabled other cultural staples — without sliced bread, there's no PB&J as we know it, no
+            grilled cheese, no toast points. It remains the most practical bread format for daily use.</p>
+        </div>
+        <div class="side-card con">
+          <div class="side-label">🔴 Anti Sliced Bread</div>
+          <p>Pre-sliced bread requires preservatives and additives (dough conditioners, high-fructose corn syrup,
+            calcium sulfate) to stay "fresh" in plastic bags for weeks — real bread goes stale in 2 days. It led to the
+            industrialization of bread, replacing local bakeries with factory production. The soft, squishy texture that
+            Americans now consider "normal" bread would be unrecognizable to bakers throughout 99% of bread's
+            14,000-year history. Sliced bread didn't elevate bread — it commodified it.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Controversy 4: Sourdough hype -->
+    <div class="controversy-topic animate-in">
+      <h3><span class="topic-icon">🫙</span> The Sourdough Hype: Cure-All or Cult?</h3>
+      <p style="color: var(--text-secondary); margin-bottom: var(--space-xl); line-height: 1.8;">
+        The COVID-19 pandemic turned millions of people into home sourdough bakers overnight. Flour flew off shelves.
+        Sourdough starters were named, coddled, and shared like pets. But beyond the wholesome Instagram posts, a debate
+        emerged: is sourdough genuinely healthier, or has it become an overhyped symbol of pandemic-era lifestyle
+        culture?
+      </p>
+      <div class="debate-sides">
+        <div class="side-card pro">
+          <div class="side-label">🟢 Pro-Sourdough</div>
+          <p>Sourdough's long fermentation (12-48 hours) gives bacteria time to pre-digest starches, break down phytic
+            acid (which blocks mineral absorption), and produce organic acids that lower the glycemic index. Studies
+            show sourdough causes significantly smaller blood sugar spikes than commercial yeast bread. It's also one of
+            the only breads many gluten-sensitive people can tolerate, because fermentation partially breaks down gluten
+            proteins. Plus, it genuinely tastes incredible.</p>
+        </div>
+        <div class="side-card con">
+          <div class="side-label">🔴 Sourdough Skeptics</div>
+          <p>Many "sourdough" breads sold commercially aren't real sourdough at all — they use sourdough flavoring or
+            vinegar to fake the tang while using commercial yeast for speed. The health benefits, while real, are often
+            exaggerated by influencers — sourdough is still bread, and the differences in glycemic index are modest for
+            most people. The cult-like devotion (naming starters, claiming it's "alive") can edge into pseudoscience.
+            And the gatekeeping in sourdough communities can be toxic.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Controversy 5: Carb-phobia -->
+    <div class="controversy-topic animate-in">
+      <h3><span class="topic-icon">🚫</span> Carb-Phobia: Should We Fear Bread?</h3>
+      <p style="color: var(--text-secondary); margin-bottom: var(--space-xl); line-height: 1.8;">
+        Keto, paleo, Atkins, Whole30 — the last few decades have seen an unprecedented war on carbohydrates, and bread
+        has been the #1 casualty. Once the literal "staff of life" that sustained civilizations for millennia, bread is
+        now treated by many diet cultures as a guilty indulgence. Has bread been unfairly villainized?
+      </p>
+      <div class="debate-sides">
+        <div class="side-card pro">
+          <div class="side-label">🟢 Bread Is Not the Enemy</div>
+          <p>Bread has sustained human populations for at least 14,000 years. The world's longest-lived populations
+            (Blue Zones — Sardinia, Okinawa, Ikaria) regularly eat bread as part of their diet. The obesity and diabetes
+            epidemics correlate with the rise of ultra-processed foods, sugary drinks, and sedentary lifestyles — not
+            with bread consumption, which has actually declined over the same period. Quality bread made from whole
+            grains and slow fermentation is a genuinely nutritious food.</p>
+        </div>
+        <div class="side-card con">
+          <div class="side-label">🔴 Bread Should Be Limited</div>
+          <p>Modern bread is fundamentally different from what our ancestors ate. Mass-produced bread is made with
+            refined flour, added sugar, seed oils, and dozens of additives. Low-carb diets have shown real benefits for
+            blood sugar control, weight management, and reducing inflammation for some people. For those with insulin
+            resistance (an estimated 40% of U.S. adults), reducing bread and other high-glycemic foods can be genuinely
+            therapeutic. The issue isn't all bread — it's the kind most people actually eat.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Closing -->
+    <div class="glass-card animate-in" style="text-align: center; padding: var(--space-3xl);">
+      <span style="font-size: 3rem; display: block; margin-bottom: var(--space-md);">🍞</span>
+      <h3 style="font-size: 1.5rem; margin-bottom: var(--space-md);">The Verdict?</h3>
+      <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto; line-height: 1.8;">
+        Like most things in life, the truth about bread lives in the nuance. The quality of ingredients, the method of
+        preparation, individual health needs, and cultural context all matter. One thing we can all agree on:
+        fresh-baked bread, still warm from the oven, filling your kitchen with that unmistakable aroma — that's pure
+        magic. And no controversy can take that away.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="footer-logo">🌾 The Bread Collective</div>
+    <ul class="footer-links">
+      <li><a href="index.html">Featured</a></li>
+      <li><a href="how-to-make.html">How to Make</a></li>
+      <li><a href="toppings.html">Toppings</a></li>
+      <li><a href="controversy.html">Controversy</a></li>
+    </ul>
+    <p class="footer-copy">&copy; 2026 The Bread Collective. Baked with love.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

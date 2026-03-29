@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bread Collective — Artisan Bread Culture</title>
+  <meta name="description"
+    content="Explore the world of artisan bread — discover featured breads, learn baking techniques, find the best toppings, and dive into bread controversies.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ======= NAVIGATION ======= -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="wheat-icon">🌾</span>
+      The Bread Collective
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Featured</a></li>
+      <li><a href="how-to-make.html">How to Make</a></li>
+      <li><a href="toppings.html">Toppings</a></li>
+      <li><a href="controversy.html">Controversy</a></li>
+    </ul>
+  </nav>
+
+  <!-- ======= HERO ======= -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="images/hero.png" alt="Artisan baker kneading dough in a rustic bakery" loading="eager">
+    </div>
+    <div class="hero-content">
+      <span class="hero-badge">Since the dawn of civilization</span>
+      <h1>The Art &amp; Soul of Bread</h1>
+      <p>
+        From ancient grains to sourdough starters, bread is more than food — it's history, culture, and craft baked into
+        every loaf.
+      </p>
+      <a href="#featured" class="btn btn-primary">Explore Featured Breads ↓</a>
+    </div>
+  </section>
+
+  <!-- ======= FEATURED BREAD CAROUSEL ======= -->
+  <section class="featured-section" id="featured">
+    <div class="section-header animate-in">
+      <span class="section-label">Our Selection</span>
+      <h2>Featured Breads</h2>
+      <p>Five extraordinary breads from around the world, each telling its own story of tradition and craft.</p>
+    </div>
+
+    <div class="carousel-container animate-in">
+      <div class="carousel-viewport">
+        <div class="carousel-track" id="carouselTrack">
+          <!-- Slide 1 — Sourdough -->
+          <div class="carousel-slide">
+            <img src="images/sourdough.png" alt="Artisan sourdough bread with scored crust">
+            <div class="carousel-slide-overlay">
+              <span class="bread-origin">📍 San Francisco, USA</span>
+              <h3>Sourdough</h3>
+              <p>The king of artisan breads. Naturally leavened with wild yeast and bacteria, sourdough develops a
+                complex, tangy flavor and a beautifully open crumb structure over days of slow fermentation.</p>
+            </div>
+          </div>
+
+          <!-- Slide 2 — Baguette -->
+          <div class="carousel-slide">
+            <img src="images/baguette.png" alt="Classic French baguette with crispy crust">
+            <div class="carousel-slide-overlay">
+              <span class="bread-origin">📍 Paris, France</span>
+              <h3>Baguette</h3>
+              <p>The iconic French bread — a crispy, crackled golden crust yields to a soft, airy interior. By law in
+                France, a traditional baguette contains only flour, water, yeast, and salt.</p>
+            </div>
+          </div>
+
+          <!-- Slide 3 — Ciabatta -->
+          <div class="carousel-slide">
+            <img src="images/ciabatta.png" alt="Italian ciabatta bread with open crumb">
+            <div class="carousel-slide-overlay">
+              <span class="bread-origin">📍 Veneto, Italy</span>
+              <h3>Ciabatta</h3>
+              <p>Italy's answer to the baguette. Born in 1982, this relatively modern bread features an incredibly open,
+                hole-riddled crumb — perfect for soaking up olive oil or building the ultimate panini.</p>
+            </div>
+          </div>
+
+          <!-- Slide 4 — Rye -->
+          <div class="carousel-slide">
+            <img src="images/rye.png" alt="Dense dark rye bread with caraway seeds">
+            <div class="carousel-slide-overlay">
+              <span class="bread-origin">📍 Northern Europe</span>
+              <h3>Dark Rye</h3>
+              <p>A staple of Nordic and Eastern European baking, dark rye bread is dense, earthy, and deeply satisfying.
+                Studded with caraway seeds, it pairs perfectly with smoked fish, butter, or sharp cheeses.</p>
+            </div>
+          </div>
+
+          <!-- Slide 5 — Challah -->
+          <div class="carousel-slide">
+            <img src="images/challah.png" alt="Braided challah bread with sesame seeds">
+            <div class="carousel-slide-overlay">
+              <span class="bread-origin">📍 Jewish Tradition</span>
+              <h3>Challah</h3>
+              <p>This beautifully braided, egg-enriched bread is the centerpiece of Jewish Sabbath and holiday tables.
+                Its golden crust and pillowy-soft interior make it equally perfect for French toast the next morning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-btn carousel-btn-prev" id="carouselPrev" aria-label="Previous bread">‹</button>
+      <button class="carousel-btn carousel-btn-next" id="carouselNext" aria-label="Next bread">›</button>
+
+      <div class="carousel-dots" id="carouselDots">
+        <button class="carousel-dot active" data-index="0" aria-label="Go to slide 1"></button>
+        <button class="carousel-dot" data-index="1" aria-label="Go to slide 2"></button>
+        <button class="carousel-dot" data-index="2" aria-label="Go to slide 3"></button>
+        <button class="carousel-dot" data-index="3" aria-label="Go to slide 4"></button>
+        <button class="carousel-dot" data-index="4" aria-label="Go to slide 5"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= QUICK LINKS ======= -->
+  <section class="featured-section" style="padding-top: 0;">
+    <div class="section-header animate-in">
+      <span class="section-label">Discover More</span>
+      <h2>Explore the World of Bread</h2>
+    </div>
+    <div class="toppings-grid">
+      <a href="how-to-make.html" class="glass-card animate-in" style="text-decoration:none;">
+        <span class="topping-emoji">👐</span>
+        <h3>How to Make Bread</h3>
+        <p>Master the ancient art of bread-making with our step-by-step guide — from mixing to baking.</p>
+        <span class="topping-tag">Learn →</span>
+      </a>
+      <a href="toppings.html" class="glass-card animate-in" style="text-decoration:none;">
+        <span class="topping-emoji">🧈</span>
+        <h3>Best Toppings</h3>
+        <p>Discover the perfect companions for your bread — from classic butter to gourmet combinations.</p>
+        <span class="topping-tag">Discover →</span>
+      </a>
+      <a href="controversy.html" class="glass-card animate-in" style="text-decoration:none;">
+        <span class="topping-emoji">⚡</span>
+        <h3>Bread Controversy</h3>
+        <p>Gluten debates, white vs. whole grain, sliced bread hate — the hot takes you didn't know you needed.</p>
+        <span class="topping-tag">Read →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="footer-logo">🌾 The Bread Collective</div>
+    <ul class="footer-links">
+      <li><a href="index.html">Featured</a></li>
+      <li><a href="how-to-make.html">How to Make</a></li>
+      <li><a href="toppings.html">Toppings</a></li>
+      <li><a href="controversy.html">Controversy</a></li>
+    </ul>
+    <p class="footer-copy">&copy; 2026 The Bread Collective. Baked with love.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
